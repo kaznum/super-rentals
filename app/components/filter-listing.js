@@ -2,7 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   filter: null,
-  filteredList: null,
+  // filteredListはtutorialにはあるけど多分不要
+  // filteredList: null,
   actions: {
     autoComplete() {
       this.get('autoComplete')(this.get('filter'));
